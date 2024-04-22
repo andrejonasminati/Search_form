@@ -1,0 +1,92 @@
+@font-face {
+    font-family:'poppins';
+    src: url(poppins-font/Poppins-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'poppins';
+}
+
+body{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    width: 100%;
+    margin: auto;
+}
+
+.quebra-float{
+    clear:both;
+
+}
+/*  style menus  */
+header{
+    margin:0px;
+    height: auto;
+}
+
+#menus-box{
+    background-color: black;
+    width: 100%;
+}
+
+#logo{
+    display: inline;
+    border:red 5px solid;
+    margin:auto;
+}
+img{
+    width: 40px;
+    border-radius:50px;
+    display:inline;
+    margin: 25px 0px 25px 50px;
+    border:rgb(77, 77, 77) 5px solid;
+}
+
+.item{
+    display: inline;
+    float: right;
+    margin: 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color:white;
+   
+}
+
+#item1{
+    margin-right: 50px;
+    background: transparent;
+    background-color: rgb(96, 96, 96);
+}
+#item1:hover{
+    background-color: rgb(118, 118, 118);
+
+}
+#item2{
+    background-color: rgb(0, 162, 65);
+    transition: 0.3s ease;
+    color:black;
+}
+#item2:hover{
+    background-color: rgb(0, 123, 35);
+    color: white; 
+}
+
+#item3{
+    background: transparent;
+    background-color: rgb(96, 96, 96);
+}
+#item3:hover{
+    background-color: rgb(118, 118, 118);
+}
+
+
+
+/*corpo */
+
+
