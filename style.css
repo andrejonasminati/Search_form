@@ -9,13 +9,26 @@
 }
 
 body{
-    background-image: url();
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment:local;
+    position: relative;
+}
+
+body::before{
+    content:'';
+    background-image: url('imgs/fundo-body.png');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed;
+    position: absolute;
     width: 100%;
-    margin: auto;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity:0.5;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
 }
 
 .quebra-float{
@@ -33,10 +46,12 @@ header{
     width: 100%;
 }
 
-#logo{
+.logo{
     display: inline;
-    border:red 5px solid;
     margin:auto;
+    width: 50px;
+    margin: 25px 30px;
+    ;
 }
 img{
     width: 40px;
@@ -55,6 +70,7 @@ img{
     padding: 10px;
     border-radius: 5px;
     color:white;
+    font-weight: bold;
    
 }
 
@@ -90,3 +106,62 @@ img{
 /*corpo */
 
 
+s
+main{
+    width: 100%;
+}
+h1, h2, h4{
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#form-pgn{
+    margin: auto;
+    width: 38%;
+    border-radius: 5px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+.box-input{
+    width: 90%;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.title-box{
+    font-size: 20px;
+    color: white;
+}
+
+#avaliacao{
+    margin-top: 10px;
+    width: 40%;
+    align-items: center;
+}
+.opcao-radio,
+.opcao-checkbox{
+    color:white;
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+    font-size:18px;
+}
+#textarea-box{
+    min-height: 120px;
+    resize: vertical;
+    padding: 0.625rem;
+}
+
+#button-enviar{
+    background-color: rgb(0, 162, 65);
+    transition: 0.3s ease;
+    color:black;
+    font-weight: bold;
+}
+#button-enviar:hover{
+    background-color: rgb(0, 123, 35);
+    color: white; 
+}

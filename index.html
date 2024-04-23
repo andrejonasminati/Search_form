@@ -7,18 +7,102 @@
     <title>Tecno research - pesquisas inteligentes</title>
 </head>
 <body>
-<header>
-    <div id="menus-box">
-        <img src="imgs/robo-logo.jpg">
-        <a href="index.html" class="item" id="item1">User</a>
-        <a href="index.html" class="item" id="item2">Sign up</a>
-        <a href="index.html" class="item" id="item3">Log in</a>
-        <div class="quebra-float"></div>
-    </div>
-</header>
-
+    <div class="content">
+    <header>
+        <div id="menus-box">
+            <img src="imgs/robo-logo.jpg" class="logo">
+            <a href="index.html" class="item" id="item1">User</a>
+            <a href="index.html" class="item" id="item2">Sign up</a>
+            <a href="index.html" class="item" id="item3">Log in</a>
+            <div class="quebra-float"></div>
+        </div>
+    </header>
+    <br><br>
     <main>
+        <div>
+            <h1>Tecno research - pesquisas em TI</h1>
+            <h4>analisando o mercado para melhores resultados</h4>
+            <br>
+            <form action="congratul.html" id="form-pgn">
+                <label class="title-box">Nome</label><br>
+                <input type="text" placeholder="Digite seu nome" name="nome" class="box-input" required>
 
+                <br><br>
+
+                <label class="title-box">Email</label><br>
+                <input type="email" placeholder="Digite seu email" name="email" class="box-input" required>
+
+                <br><br>
+
+                <label class="title-box">Idade</label><br>
+                <input type="number" placeholder="Idade" name="idade" class="box-input" required>
+
+                <br><br>
+
+                <label class="title-box">Qual sua situação atual na área de TI</label><br>
+                <div class="select-wrapper">
+                    <select class="box-input" required>
+                    <option disabled selected >Selecione uma opção</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="estagiario">Estagiário</option>
+                    <option value="junior">Júnior(2 a 4 anos)</option>
+                    <option value="pleno">Pleno(4 a 8 anos)</option>
+                    <option value="senior">Sênior(mais que 8 anos)</option>
+                    </select>
+                </div>
+
+                <br><br>
+
+                <label class="title-box">Qual sua maneira preferida de trabalho</label><br>
+                <input type="radio" name="opcao" value="home"><span class="opcao-radio">Home Office</span> <br>
+                <input type="radio" name="opcao" value="presencial" ><span class="opcao-radio">Presencial</span>
+
+                <br><br>
+
+                <label class="title-box">Qual foi a sua forma de desenvolvimento</label><br>
+                <input type="checkbox" id="tecnico" name="estudos" value="tecnico" >
+                <label for="tecnico" class="opcao-checkbox">Curso Técnico</label><br>
+                <input type="checkbox" id="graduacao" name="estudos" value="g" >
+                <label for="graduacao" class="opcao-checkbox">Graduação</label><br>
+                <input type="checkbox" id="trabalho" name="estudos" value="trabalho" >
+                <label for="trabalho" class="opcao-checkbox">No Trabalho</label><br>
+                <input type="checkbox" id="cursinhos" name="estudos" value="cursinhos" >
+                <label for="cursinhos" class="opcao-checkbox">Cursinhos</label><br>
+                <input type="checkbox" id="outro" name="estudos" value="outro">
+                <label for="outro" class="opcao-checkbox">Outro</label>
+                
+                <br><br>
+
+                <label class="title-box">Em qual área você mais trabalha no seu dia a dia</label><br>
+                <div class="select-wrapper">
+                    <select class="box-input">
+                    <option disabled selected>Selecione uma opção</option>
+                    <option value="front">Projetos Front-end</option>
+                    <option value="back">Projetos Back-end</option>
+                    <option value="analista-dados">Análise de Dados</option>
+                    <option value="gerente-projetos">Gerenciamento de projetos</option>
+                    <option value="rede">Redes</option>
+                    <option value="cibersegurança">Cibersegurança</option>
+                    <option value="analista-sistemas">Análise de Sistemas</option>
+                    <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <br><br>
+
+                <label class="title-box">Grau de contentamento na área em que atua</label><br>
+                <span id="barra-avaliação"><input type="range" name="contente" min="0" max="10"></span>
+                
+                <br><br>
+
+                <label class="title-box">Comentário ou feedback sobre a área de TI ou mesmo <br> sobre sua profissão</label><br>
+                <textarea class='box-input' id="textarea-box" placeholder="Deixe seu comentário..." required></textarea>
+                
+                <br><br>
+                <input type="submit" value="Enviar" id="button-enviar" class="box-input" required>
+            </form>
+        </div>
     </main>
+</div>
 </body>
 </html>
