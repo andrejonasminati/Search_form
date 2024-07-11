@@ -166,3 +166,21 @@ h1, h2, h4{
     background-color: rgb(0, 123, 35);
     color: white; 
 }
+
+#rodape{
+    width: 100vw;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#link_rodape{
+    text-decoration: none;
+    color: rgb(255, 155, 97);
+}
+#link_rodape:hover{
+    text-decoration: underline;
+}
