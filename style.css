@@ -118,10 +118,11 @@ h1, h2, h4{
 
 #form-pgn{
     margin: auto;
-    width: 38%;
+    width: 40%;
     border-radius: 5px;
     padding: 25px;
-    background-color: rgba(0, 0, 0, 0.8)
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 400px;
 }
 .box-input{
     width: 90%;
